@@ -13,4 +13,10 @@ obj.nome="Pedro"
 obj.idade=19
 obj.aniversario()
 
+obj2= Gafanhoto()
+obj2.nome="Laura"
+obj2.idade=54
+obj2.aniversario()
 print(obj.mensagem())
+print(obj2.mensagem())
+
