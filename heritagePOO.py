@@ -1,36 +1,12 @@
-class Pessoa:
-    def __init__(self, nome="", idade=0):
-        self.idade=idade
-        self.nome= nome
+#import classes -  ai teria que fazer classes.Aluno, classes.medtodo()
+from classes import * # asterisco importa tudo
 
-    def aniversario(self):
-        self.idade+=1
+def main():
+    a1= Aluno("pedro", 19, "informatica", "T01")
+    a1.aniversario()
+    a1.fazer_matricula()
+    a1.estudar()
+    print(a1)
 
-class Aluno(Pessoa):
-    def __init__(self, nome, idade, curso, turma):
-        super().__init__(nome, idade)
-        self.curso=curso
-        self.turma=turma
-
-    def fazer_matricula(self):
-        pass
-class Professor(Pessoa):
-    def __init__(self, nome, idade, especialidade, nivel):
-        super().__init__(nome, idade)
-        self.especialidade= especialidade
-        self.nivel=nivel
-    
-    def dar_aula(self):
-        pass
-class Funcionario(Pessoa):
-    def __init__(self, nome, idade, cargo, setor):
-        super().__init__(nome, idade)
-        self.cargo= cargo
-        self.setor=setor
-
-    def bater_ponto(self):
-        pass
-
-a1= Aluno("pedro", 19, "informatica", "T01")
-
-print(a1.__dict__)
+if __name__=="__main__":
+    main()
