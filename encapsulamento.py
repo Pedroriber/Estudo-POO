@@ -16,6 +16,10 @@ p.idade = -5  # 😬 valor inválido """
     def get_idade(self):
         return self._idade """
 
+import math
+
+
+print(math.pi)
 class Pessoa:
     def __init__(self, idade):
         self._idade = idade
@@ -31,5 +35,5 @@ class Pessoa:
         self._idade = valor
 
 p = Pessoa(18)
-p.idade = -5
-print(p.__dict__)
+p.idade = 20
+print(p.__repr__())
